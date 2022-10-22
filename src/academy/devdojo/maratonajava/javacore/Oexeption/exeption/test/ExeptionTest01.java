@@ -18,14 +18,3 @@ public class ExeptionTest01 {
         }
     }
 }
-/*** 95 - Exceções pt 01 - Errors
- *
- * - A stack é uma porção contígua de memória reservada para empilhar os dados
- * necessários durante a execução de blocos de código.
- *
- * - "Runtime exeption" é uma exceção do tipo Unchecked, que geralmente
- * quando acontece é um erro de desenvolvimento, onde o dev deveria
- * ter tomado cuidado ao executar a chamada que esta dando a exceção
- *
- * -
- */
