@@ -16,7 +16,7 @@ public class RuntimeExceptionTest05 {
 
         try {
             talvezLanceException();
-        } catch (IOException | SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
         }
     }
