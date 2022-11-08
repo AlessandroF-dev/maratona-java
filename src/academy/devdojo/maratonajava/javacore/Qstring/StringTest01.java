@@ -10,6 +10,5 @@ public class StringTest01 {
         System.out.println(nome);
         System.out.println(nome == nome2);
         System.out.println(nome2 == nome3);
-
     }
 }
