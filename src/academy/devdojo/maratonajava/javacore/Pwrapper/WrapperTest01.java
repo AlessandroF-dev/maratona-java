@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Pwrapper.test;
+package academy.devdojo.maratonajava.javacore.Pwrapper;
 
 public class WrapperTest01 {
     public static void main(String[] args) {
