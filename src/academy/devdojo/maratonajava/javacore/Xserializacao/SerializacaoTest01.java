@@ -1,7 +1,7 @@
-package academy.devdojo.maratonajava.Xserializacao;
+package academy.devdojo.maratonajava.javacore.Xserializacao;
 
-import academy.devdojo.maratonajava.Xserializacao.dominio.Aluno;
-import academy.devdojo.maratonajava.Xserializacao.dominio.Turma;
+import academy.devdojo.maratonajava.javacore.Xserializacao.dominio.Aluno;
+import academy.devdojo.maratonajava.javacore.Xserializacao.dominio.Turma;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

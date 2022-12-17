@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.Xserializacao.dominio;
+package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
 import java.io.*;
 
@@ -8,6 +8,7 @@ public class Aluno implements Serializable {
     private String nome;
     private transient String password;
     private transient Turma turma;
+
     private static final String NOME_ESCOLA = "DevDojo Virado no Jiraya rapaizz";
 
     public Aluno(Long id, String nome, String password) {

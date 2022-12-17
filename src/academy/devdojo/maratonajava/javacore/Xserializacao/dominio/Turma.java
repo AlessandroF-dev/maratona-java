@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.Xserializacao.dominio;
+package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
 public class Turma {
     private String nome;
