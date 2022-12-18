@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Ycolecoes;
+package academy.devdojo.maratonajava.javacore.Ycolecoes.teste;
 
 import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Smartphone;
 
