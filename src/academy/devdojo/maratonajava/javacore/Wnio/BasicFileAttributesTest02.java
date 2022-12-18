@@ -1,6 +1,5 @@
-package academy.devdojo.maratonajava.javacore.wnio;
+package academy.devdojo.maratonajava.javacore.Wnio;
 
-import javax.naming.directory.BasicAttributes;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

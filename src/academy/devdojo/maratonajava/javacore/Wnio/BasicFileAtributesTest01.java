@@ -1,11 +1,10 @@
-package academy.devdojo.maratonajava.javacore.wnio;
+package academy.devdojo.maratonajava.javacore.Wnio;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
