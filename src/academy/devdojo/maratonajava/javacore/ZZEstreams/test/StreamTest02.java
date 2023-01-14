@@ -1,14 +1,13 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
-
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
-
-public class StreamTest01 {
+public class StreamTest02 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Naruto", 9.9),
             new LightNovel("Pokemon", 5.9),
@@ -19,17 +18,13 @@ public class StreamTest01 {
     ));
 
     public static void main(String[] args) {
-        lightNovels.sort(Comparator.comparing(LightNovel::getTitle));
-        List<String> titles = new ArrayList<>();
-        for (LightNovel lightNovel : lightNovels){
-            if (lightNovel.getPrice()<=4){
-                titles.add(lightNovel.getTitle());
-            }
-            if (titles.size()>=3){
-                break;
-            }
-        }
-        System.out.println(lightNovels);
+        List<String> titles = lightNovels.stream()
+            .sorted(Comparator.comparing(LightNovel::getTitle))
+            .filter(ln -> ln.getPrice() <= 10)
+            .limit(3)
+            .map(LightNovel::getTitle)
+            .collect(Collectors.toList());
+
         System.out.println(titles);
     }
 }
