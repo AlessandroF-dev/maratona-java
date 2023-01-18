@@ -5,6 +5,17 @@ import java.util.Objects;
 public class LightNovel {
     private String title;
     private double price;
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public LightNovel(String title, double price, Category category) {
+        this.title = title;
+        this.price = price;
+        this.category = category;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -29,6 +40,7 @@ public class LightNovel {
         return "LightNovel{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
     }
 
