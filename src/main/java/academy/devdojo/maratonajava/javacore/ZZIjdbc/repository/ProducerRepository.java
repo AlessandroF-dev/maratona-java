@@ -25,7 +25,7 @@ public class ProducerRepository {
 
     public static void saveTransaction(List<Producer> producers) {
         try (Connection conn = ConnectionFactory.getConection()) {
-            conn.setAutoCommit(false );
+            conn.setAutoCommit(false);
             preparedStatementSaveTransaction(conn, producers);
             conn.commit();
             conn.setAutoCommit(true);
@@ -41,13 +41,14 @@ public class ProducerRepository {
             try (PreparedStatement ps = conn.prepareStatement(sql)) {
                 log.info("Saving producer '{}'", p.getName());
                 ps.setString(1, p.getName());
-                if(p.getName().equals("White fox")) throw new SQLException("Can't save White fox");
+                if (p.getName().equals("White fox")) throw new SQLException("Can't save White fox");
                 ps.execute();
             } catch (SQLException e) {
                 e.printStackTrace();
                 shouldRollback = true;
             }
-        }if (shouldRollback) {
+        }
+        if (shouldRollback) {
             log.info("Transaction is goin be rollback");
             conn.rollback();
         }

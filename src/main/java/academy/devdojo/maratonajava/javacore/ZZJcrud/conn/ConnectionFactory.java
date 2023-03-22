@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZJcrud.conn;
+package academy.devdojo.maratonajava.javacore.ZZJa.conn;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
